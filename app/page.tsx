@@ -8,3 +8,8 @@ const HomePage = () => {
 }
 
 export default HomePage;
+
+//Localhost/3001
+//Localhost/3001/about
+//Localhost/3001/about/team
+//Localhost/3001/about/team/10
