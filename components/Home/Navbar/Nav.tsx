@@ -5,7 +5,11 @@ import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
 import { HiBars3BottomRight } from 'react-icons/hi2';
 
-const Nav = () => {
+type Props = {
+    openNav:() => void;
+}
+
+const Nav = ({openNav}: Props) => {
     const [navBg, setNavBg] = useState(false);
 
     useEffect(() => {
@@ -56,7 +60,7 @@ const Nav = () => {
                     </button>
                     {/* Theme Toggler */}
 
-                    <HiBars3BottomRight  className='w-8 h-8 cursor-pointer text-black lg:hidden'/>
+                    <HiBars3BottomRight  onClick={openNav} className='w-8 h-8 cursor-pointer text-black lg:hidden'/>
                 </div>
             </div>
         </div>
