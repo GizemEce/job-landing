@@ -4,6 +4,7 @@ import { LuNetwork } from 'react-icons/lu';
 import { NavLinks } from '@/constant/constant';
 import Link from 'next/link';
 import { HiBars3BottomRight } from 'react-icons/hi2';
+import ThemeToggler from '@/components/Helper/ThemeToggler';
 
 type Props = {
     openNav:() => void;
@@ -59,7 +60,7 @@ const Nav = ({openNav}: Props) => {
                         Job Post
                     </button>
                     {/* Theme Toggler */}
-
+                    <ThemeToggler />
                     <HiBars3BottomRight  onClick={openNav} className='w-8 h-8 cursor-pointer text-black lg:hidden'/>
                 </div>
             </div>
